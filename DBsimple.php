@@ -9,7 +9,7 @@ class Db {
         global $project_root;
         require_once $project_root."dbsimple/config.php";
         require_once $project_root."dbsimple/DbSimple/Generic.php";
-            $this -> db = @DbSimple_Generic::connect( 'mysqli://root:@localhost/devschool-spa?charset=utf-8' );
+            $this -> db = @DbSimple_Generic::connect( 'mysqli://root:password@mysql/devschool_spa?charset=utf-8' );
     }    
     public static function instance() {
         if ( self::$instance == NULL ) {

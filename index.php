@@ -2,7 +2,7 @@
 
 header('Content-type: text/html; charset=utf-8');
 error_reporting(E_ERROR|E_WARNING|E_PARSE|E_NOTICE|E_ALL);
-ini_set('display_errors', 1);
+ini_set('display_errors', 0);
 
 $project_root =  substr( __FILE__, 0, -9) ;     //index.php - 9 символов
 
